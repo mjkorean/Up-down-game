@@ -3,4 +3,4 @@
 - HTML
 - CSS
 - Bootstrap
-- vanilla JavaScrip
+- Vanilla Javascript
