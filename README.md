@@ -1,4 +1,4 @@
-# Up-down-game
+# Up down game
 https://mjkorean-up-down-game.netlify.app/
 
 - HTML
