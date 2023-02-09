@@ -1,4 +1,4 @@
-// 구현 로직 //
+// 구현로직 간단정리//
 // 랜덤번호 지정
 // 유저 번호 입력 후 GO 버튼 누름
 // 만약 유저가 랜덤번호 맞추면, 정답 출력
@@ -17,8 +17,8 @@
 
 // querySelector: id = '#button-play' / class = '.button-play'
 let number = 0;
-let chance = 5;
-let history = [];
+let chance = 5; // 총 입력기회 5번
+let history = []; // 유저가 입력한 숫자들 리스트 생성
 let chanceLeft = document.querySelector("#chance-left");
 let buttonPlay = document.querySelector("#button-play");
 let buttonReset = document.querySelector("#button-reset");
@@ -29,7 +29,9 @@ let gameOver = false;
 // 버튼 클릭 시 이벤트 발생 기능
 buttonPlay.addEventListener("click", play);
 buttonReset.addEventListener("click", reset);
-input.addEventListener("focus", function () {input.value = ''});
+input.addEventListener("focus", function () {
+  input.value = "";
+});
 
 // Math.random = 0~1 사이의 숫자를 무작위 반환 (0 포함, 1 미포함)
 // Math.floor = 소수점 이하 숫자 삭제
@@ -77,11 +79,8 @@ function play() {
 }
 
 function reset() {
-  // input 초기화
-  input.value = "";
-  // 새로운 번호 생성
-  randomNumber();
-
+  input.value = ""; // input 초기화
+  randomNumber(); // 새로운 번호 생성
   inputMsg.textContent = "처음부터 다시 입력해보세요!";
 }
 

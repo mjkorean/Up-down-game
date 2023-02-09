@@ -1,3 +1,7 @@
+body {
+  margin: auto;
+}
+
 .title {
   --c: #1095c1;
   --h: 1.2em;
